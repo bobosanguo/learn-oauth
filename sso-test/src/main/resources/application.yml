@@ -1,0 +1,18 @@
+server:
+  port: 8080
+security:
+  oauth2:
+    sso:
+      loginPath: /login   # 登录路径
+    client:
+      clientId: c1544cf42ee7c09effc1
+      clientSecret: 889861e3f92ca3a07ce62981febdae2a267a7cf4
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+    resource:
+      userInfoUri: https://api.github.com/user
+      preferTokenInfo: false
+
+logging:
+  level:
+    root: debug
